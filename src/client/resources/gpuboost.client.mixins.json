@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "dev.vconceited.gpuboost.client.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"EntityRendererMixin",
+		"GlSurfaceMixin",
+		"MinecraftMixin"
+	],
+	"injectors": {
+		"defaultRequire": 0
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "gpuboost",
+	"version": "${version}",
+	"name": "GpuBoost",
+	"description": "Measurement-driven FPS optimizer: real CPU/GPU bottleneck detection, adaptive entity and particle budgets, Weak CPU Mode, performance profiles, live frame-time graph and a repeatable benchmark tool. Works alongside Sodium instead of replacing it.",
+	"authors": [
+		"vConceited"
+	],
+	"license": "MIT",
+	"icon": "assets/gpuboost/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.vconceited.gpuboost.client.GpuBoostClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "gpuboost.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"sodium": "*"
+	}
+}
