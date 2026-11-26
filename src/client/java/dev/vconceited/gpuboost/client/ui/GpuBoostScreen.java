@@ -56,7 +56,7 @@ public final class GpuBoostScreen extends Screen {
 
 	@Override
 	public void onClose() {
-		this.minecraft.setScreen(this.parent);
+		this.minecraft.gui.setScreen(this.parent);
 	}
 
 	private GpuBoostRuntime rt() {
@@ -81,7 +81,7 @@ public final class GpuBoostScreen extends Screen {
 				.build());
 		y += step;
 
-		addRenderableWidget(Button.builder(Component.literal("Features..."), b -> this.minecraft.setScreen(new FeaturesScreen(this)))
+		addRenderableWidget(Button.builder(Component.literal("Features..."), b -> this.minecraft.gui.setScreen(new FeaturesScreen(this)))
 				.pos(x, y).size(BUTTON_W, BUTTON_H).build());
 		y += step;
 
@@ -183,7 +183,7 @@ public final class GpuBoostScreen extends Screen {
 			return;
 		}
 
-		this.minecraft.setScreen(null);
+		this.minecraft.gui.setScreen(null);
 	}
 
 	@Override

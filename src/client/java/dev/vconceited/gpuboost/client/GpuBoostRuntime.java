@@ -216,7 +216,7 @@ public final class GpuBoostRuntime implements FrameMonitor.Callback {
 		if (this.pendingScreen != null) {
 			Screen s = this.pendingScreen;
 			this.pendingScreen = null;
-			mc.setScreen(s);
+			mc.gui.setScreen(s);
 		}
 
 		long now = System.nanoTime();
