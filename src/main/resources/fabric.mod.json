@@ -5,8 +5,16 @@
 	"name": "GpuBoost",
 	"description": "Measurement-driven FPS optimizer: real CPU/GPU bottleneck detection, adaptive entity and particle budgets, Weak CPU Mode, performance profiles, live frame-time graph and a repeatable benchmark tool. Works alongside Sodium instead of replacing it.",
 	"authors": [
-		"vConceited"
+		{
+			"name": "vConceited",
+			"contact": {
+				"homepage": "https://www.curseforge.com/members/vconceited/projects"
+			}
+		}
 	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/members/vconceited/projects"
+	},
 	"license": "MIT",
 	"icon": "assets/gpuboost/icon.png",
 	"environment": "client",
